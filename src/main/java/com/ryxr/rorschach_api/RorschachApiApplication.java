@@ -1,0 +1,13 @@
+package com.ryxr.rorschach_api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@SpringBootApplication
+@EnableTransactionManagement
+public class RorschachApiApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(RorschachApiApplication.class, args);
+    }
+}
