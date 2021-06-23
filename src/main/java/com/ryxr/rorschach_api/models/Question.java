@@ -8,7 +8,6 @@ import java.util.List;
 
 //@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Entity(name = "questions")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Question extends EntityWithUUID {

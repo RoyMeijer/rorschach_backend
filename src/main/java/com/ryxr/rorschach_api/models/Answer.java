@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity(name ="answers")
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Answer extends EntityWithUUID {
