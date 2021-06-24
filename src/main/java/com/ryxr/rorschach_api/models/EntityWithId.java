@@ -1,16 +1,17 @@
 package com.ryxr.rorschach_api.models;
 
 import org.hibernate.annotations.Type;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.util.UUID;
 
 @MappedSuperclass
-public class EntityWithUUID {
-    @Id @Type(type = "pg-uuid")
-    private UUID id;
+public class EntityWithId {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    public EntityWithUUID() {
-        this.id = UUID.randomUUID();
-    }
 }
