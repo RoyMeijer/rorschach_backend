@@ -1,11 +1,12 @@
 package com.ryxr.rorschach_api.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
 
-//@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Entity(name = "questions")
 @AllArgsConstructor
 @NoArgsConstructor

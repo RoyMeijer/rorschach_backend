@@ -4,6 +4,6 @@ import com.ryxr.rorschach_api.models.Question;
 
 import java.util.List;
 
-public interface QuizService {
+public interface QuestionService {
     List<Question> findAll();
 }

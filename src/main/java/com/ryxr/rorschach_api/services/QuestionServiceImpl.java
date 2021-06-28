@@ -7,8 +7,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service("quizService")
-public class QuizServiceImpl implements QuizService {
-    private QuestionRepository questionRepository;
+public class QuestionServiceImpl implements QuestionService {
+    private final QuestionRepository questionRepository;
+
+    public QuestionServiceImpl(QuestionRepository questionRepository) {
+        this.questionRepository = questionRepository;
+    }
 
     @Override
     public List<Question> findAll() {
