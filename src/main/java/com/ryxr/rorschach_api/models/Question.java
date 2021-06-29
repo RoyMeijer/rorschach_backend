@@ -10,6 +10,8 @@ import javax.persistence.*;
 @Entity(name = "questions")
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 public class Question extends EntityWithId {
     @NotNull
     private int number;
