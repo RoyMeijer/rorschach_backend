@@ -28,6 +28,7 @@ HTTP GET rorschach.quiz/api/questions
 
 ```json
 {
+  "user_id": "123123123",
   "questions": [
     {
       "number": 1,

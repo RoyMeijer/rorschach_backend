@@ -1,9 +1,7 @@
 package com.ryxr.rorschach_api.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Type;
 
@@ -26,7 +24,6 @@ public class User {
     @Max(150)
     Integer age;
 
-    @JsonIgnore
     @JoinColumn(name = "country_id", nullable = true)
     @ManyToOne(fetch = FetchType.LAZY)
     private Country country;

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service("quizService")
+@Service("questionService")
 public class QuestionServiceImpl implements QuestionService {
     private final QuestionRepository questionRepository;
 
