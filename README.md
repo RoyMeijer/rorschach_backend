@@ -1,4 +1,4 @@
-# Rorschach Backend
+# Rorschach Backend (unfinished)
 
 ****
 
@@ -18,7 +18,6 @@ the following functionalities:
 
 ### Get quiz
 
-// TODO: check if you want to put most of this information in the frontend. or use a single request per question.
 
 #### Request
 
